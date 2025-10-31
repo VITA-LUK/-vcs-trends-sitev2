@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VCS History</title>
+</head>
+<body>
+    <nav>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="trends.html">Trends</a></li>
+    </nav>
+
+    <header>
+        <h1>Key Moments in VCS History</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Historical Timeline</h2>
+            <p>The evolution of VCS spans several decades, moving from early centralized systems to modern distributed ones</p>
+            <ul>
+                <p><strong>1982: RCS (Revision Control System)</strong> - This local VCS automated change tracking for individual files using delta storage (storing differences).</p>
+                <p><strong>1986: CVS (Concurrent Versions System)</strong> - CVS added a client-server model, allowing multiple developers to collaborate over a network. It became widely used despite limitations like non-atomic commits.</p>
+                <p><strong>2000: Subversion (SVN)</strong> - Created as a successor to CVS, SVN introduced key improvements like atomic commits (all-or-nothing changesets) and better file rename handling. It was still a centralized system.</p>
+                <p><strong>2005: Git and Mercurial</strong> - This was a breakthrough year for distributed version control (DVCS). Linus Torvalds created Git for the Linux kernel, and Mercurial was also released. In a DVCS, every user has a full copy of the repository history.</p>
+            </ul>
+        </section>
+    </main>
+    <section>
+            <h2>Why Distributed VCS (DVCS) Changed the Game</h2>
+            <p>The move from Centralized (CVCS) to Distributed (DVCS) was a major shift. In a CVCS like Subversion, there is a single central repository. This model has a single point of failure; if the server is down, nobody can commit changes.</p>
+            <p>DVCS, like Git, changed this by giving every developer their own full copy of the repository, including the entire history. This means:</p>
+            <ul>
+                <p><strong>Offline Work:</strong> Developers can commit changes locally even when offline.</p>
+                <p><strong>Resilience:</strong> Every clone serves as a backup of the project.</p>
+                <p><strong>Better Branching & Merging:</strong> In DVCS, merging is a "first-class operation". This made branching and merging extremely fast and easy, enabling non-linear workflows where many experimental branches are common. This flexibility is a primary reason DVCS (especially Git) became the modern standard.</p>
+            </ul>
+        </section>
+    
+    </main>
+</body>
+</html>
